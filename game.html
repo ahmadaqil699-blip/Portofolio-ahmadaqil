@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aqil Gaming Gear</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+        body { background-color: #0a0a0a; color: white; }
+
+        /* NAVBAR LOGO */
+        .navbar { padding: 20px 10%; display: flex; justify-content: space-between; align-items: center; position: absolute; width: 100%; z-index: 100; }
+        .logo-text { font-size: 24px; font-weight: bold; color: #00f2ff; text-transform: uppercase; letter-spacing: 2px; }
+        .logo-text span { color: white; }
+
+        .hero { height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80'); background-size: cover; }
+        .hero h1 { font-size: 4rem; color: #00f2ff; }
+
+        .container { padding: 80px 10%; }
+        .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
+        
+        .card { background: rgba(255, 255, 255, 0.05); padding: 20px; border-radius: 15px; transition: 0.5s; border: 1px solid #333; }
+        .card:hover { transform: translateY(-20px); border-color: #00f2ff; }
+        .card img { width: 100%; border-radius: 10px; margin-bottom: 15px; }
+        .btn-buy { display: block; width: 100%; padding: 12px; background: #00f2ff; color: black; text-align: center; text-decoration: none; font-weight: bold; margin-top: 15px; border-radius: 5px; }
+        
+        footer { text-align: center; padding: 40px; color: #888; border-top: 1px solid #333; }
+    </style>
+</head>
+<body>
+
+    <!-- Logo / Brand di Header -->
+    <nav class="navbar">
+        <div class="logo-text">AQIL<span>GEAR</span></div>
+    </nav>
+
+    <section class="hero">
+        <div data-aos="fade-up" data-aos-duration="1500">
+            <h1>Level Up Your Game</h1>
+            <p>Dikurasi oleh Ahmad Aqil - Professional Web Programmer</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <h2 style="text-align: center; margin-bottom: 50px;">Eksklusif dari Aqil Gear</h2>
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="card" data-aos="fade-right">
+                <img src="https://images.unsplash.com/photo-1593640408182-31c70c8268f5?auto=format&fit=crop&w=500&q=80" alt="Keyboard">
+                <h3>Aqil Series Keyboard</h3>
+                <p>Limited Edition by Aqil Design.</p>
+                <a href="#" class="btn-buy">Beli Sekarang</a>
+            </div>
+            <!-- Product 2 -->
+            <div class="card" data-aos="fade-up">
+                <img src="https://images.unsplash.com/photo-1527814853514-266133989c93?auto=format&fit=crop&w=500&q=80" alt="Mouse">
+                <h3>Aqil Pro Mouse</h3>
+                <p>Ultra-precision gaming sensor.</p>
+                <a href="#" class="btn-buy">Beli Sekarang</a>
+            </div>
+            <!-- Product 3 -->
+            <div class="card" data-aos="fade-left">
+                <img src="https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?auto=format&fit=crop&w=500&q=80" alt="Headset">
+                <h3>Aqil Surround Headset</h3>
+                <p>Official gear choice by Aqil.</p>
+                <a href="#" class="btn-buy">Beli Sekarang</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Copyright &copy; 2026 | Ahmad Aqil | Web Programmer</p>
+        <p>Hubungi: ahmadaqil699@gmail.com</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+</body>
+</html>
